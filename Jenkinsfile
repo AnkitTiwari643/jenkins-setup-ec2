@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("feature change") {
             when {
-                allof {
+                allOf {
                     changeRequest()
                 }
             }
